@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="shortcut icon" href="favicon.png" type="image/png">
-    <title>TP PHP Blog</title>
+    <title>TP PHP Vincent</title>
 
     <link rel="stylesheet" href="/css/main.css">
   </head>
@@ -14,13 +14,13 @@
 
       <nav class="enabled">
         <ul>
-          <li><a href="/">Acceuil</a></li>
+          <li><a href="/accueil">Acceuil</a></li>
           <li><a href="/admin">Admin</a></li>
         </ul>
       </nav>
 
       <h1>Cette page n'existe pas !</h1>
-      <h3><a href="/">Retourner à l'acceuil</h3>
+      <h3><a href="/accueil">Retourner à l'acceuil</h3>
 
     </div>
     

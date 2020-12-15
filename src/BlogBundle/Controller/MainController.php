@@ -9,7 +9,7 @@ class MainController {
     $articles = (new ArticleRepository())->findAll();
 
     $response = array(
-      "view" => $this->path_of_views."/home.php",
+      "view" => $this->path_of_views."/acceuil.php",
       "attributes" => [
         "articles" => $articles
       ]
