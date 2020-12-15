@@ -4,7 +4,7 @@ class DbHandler {
   private static $_db = null;
   
   private static $_host = "localhost";
-  private static $_port = 8889;
+  private static $_port = 3306;
   private static $_dbName = "tp_php";
   private static $_user = "root";
   private static $_pwd = "";

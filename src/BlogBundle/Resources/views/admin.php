@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="shortcut icon" href="favicon.png" type="image/png">
-    <title>TP PHP Vincent</title>
+    <title>TP PHP Manon</title>
 
     <link rel="stylesheet" href="/css/main.css">
   </head>
