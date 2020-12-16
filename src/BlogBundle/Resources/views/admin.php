@@ -14,7 +14,7 @@
 
       <nav class="enabled">
         <ul>
-          <li><a href="/accueil">Acceuil</a></li>
+          <li><a href="/">Acceuil</a></li>
           <li><a href="/admin">Admin</a></li>
         </ul>
       </nav>

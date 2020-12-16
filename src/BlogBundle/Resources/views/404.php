@@ -14,13 +14,13 @@
 
       <nav class="enabled">
         <ul>
-          <li><a href="/accueil">Acceuil</a></li>
+          <li><a href="/">Acceuil</a></li>
           <li><a href="/admin">Admin</a></li>
         </ul>
       </nav>
 
       <h1>Cette page n'existe pas !</h1>
-      <h3><a href="/accueil">Retourner à l'acceuil</h3>
+      <h3><a href="/">Retourner à l'acceuil</h3>
 
     </div>
     

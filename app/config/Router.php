@@ -9,7 +9,7 @@ $mainCtrl = new MainController();
 // die;
 
 switch ($request) {
-  case '/accueil':
+  case '/':
     $response = $mainCtrl->homeAction();
   break;
   case '/admin';
