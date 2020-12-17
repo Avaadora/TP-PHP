@@ -1,46 +1,93 @@
-<!DOCTYPE html>
-<html lang="fr">
+<!DOCTYPE HTML>
+<!--
+  Industrious by TEMPLATED
+  templated.co @templatedco
+  Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
   <head>
-    <meta charset="utf-8">
-    <link rel="shortcut icon" href="favicon.png" type="image/png">
-    <title>TP PHP Manon</title>
-
-    <link rel="stylesheet" href="/css/main.css">
+    <title>Articles | ArticlesPlus</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="assets/css/main.css" />
   </head>
+  <body class="is-preload">
 
-  <body>
+    <!-- Header -->
+      <header id="header">
+        <a class="logo" href="/">Articles</a>
+        <nav>
+          <a href="#menu">Menu</a>
+        </nav>
+      </header>
 
-    <div class="wrapper">
-
-      <nav class="enabled">
-        <ul>
-          <li><a href="/">Acceuil</a></li>
+    <!-- Nav -->
+      <nav id="menu">
+        <ul class="links">
+          <li><a href="/">Accueil</a></li>
           <li><a href="/admin">Admin</a></li>
         </ul>
       </nav>
 
-      <h1>Bienvenu sur le site !</h1>
-      <br>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-      <div class="articles">
-      <?php foreach ($attributes['articles'] as $article):?>
-        <article>
-          <h1><?= $article->getTitle() ?></h1>
-          <div class="meta-data">
-            <span class="author">Auteur: <?= $article->getAuthor() ?></span> -
-            <span class="category">Catégorie: <?= $article->getCategory() ?></span> -
-            <span class="creation-date">Date: <?= $article->getCreatedAt() ?></span>
-          </div>
-          <p><?= $article->getContent() ?></p>
-        </article>
-      <?php endforeach; ?>
+    <!-- Heading -->
+      <div id="heading" >
+        <h1>Articles</h1>
       </div>
-    </div>
-    
-    <script src="/js/nav.js"></script>
+
+    <!-- Main -->
+      <section id="main" class="wrapper">
+        <div class="inner">
+          <div class="content">
+              <div class="articles">
+              <?php foreach ($attributes['articles'] as $article):?>
+                <article>
+                  <h2><?= $article->getTitle() ?></h2>
+                  <div class="meta-data">
+                    <span class="author">Auteur: <?= $article->getAuthor() ?></span> -
+                    <span class="category">Catégorie: <?= $article->getCategory() ?></span> -
+                    <span class="creation-date">Date: <?= $article->getCreatedAt() ?></span>
+                  </div>
+                  <p><?= $article->getContent() ?></p>
+                </article>
+              <?php endforeach; ?>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- Footer -->
+      <footer id="footer">
+        <div class="inner">
+          <div class="content">
+            <section>
+              <h4>Contact et Menu</h4>
+              <ul class="alt">
+                <li><a href="contact.html">Me Contacter</a></li>
+                <li><a href="#menu">Menu</a></li>
+              </ul>
+            </section>
+            <section>
+              <h4>Liens</h4>
+              <ul class="plain">
+                <li><a href="https://feedly.com/" target="_blank"><i class="icon fa-rss">&nbsp;</i>Feedly</a></li>
+                <li><a href="href="contact.html><i class="icon fa-envelope">&nbsp;</i>Mail</a></li>
+              </ul>
+            </section>
+          </div>
+          <div class="copyright">
+            <p>Vincent BARTHE | 2020 Tous droits réservés</p>
+          </div>
+        </div>
+      </footer>
+
+    <!-- Scripts -->
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/browser.min.js"></script>
+      <script src="assets/js/breakpoints.min.js"></script>
+      <script src="assets/js/util.js"></script>
+      <script src="assets/js/main.js"></script>
+
   </body>
 </html>
