@@ -32,6 +32,17 @@
         </fieldset>
         <button>Supprimer</button>
       </form>
+      <?php
+        if ( (isset($_POST["pseudo"]) && "" != $_POST["pseudo"]) && (isset($_POST["password"]) && "" != $_POST["password"]) ) {
+          $pseudo = htmlspecialchars(trim($_POST["pseudo"]));
+          $password = htmlspecialchars(trim($_POST["password"]));
+          if ($pseudo == "Laxri" && $password == "mdp"){
+            $_SESSION['pseudo'] = $pseudo;
+            return true;
+          }
+        }
+        return false;
+      ?>
     
     </div>
     

@@ -30,7 +30,7 @@
           <label for="password">Mot de passe :</label>
           <input type="password" name="password">
         </fieldset>
-        <button type="submit">Go !</button>
+        <button type="submit">Valider</button>
       </form>
     
     </div>

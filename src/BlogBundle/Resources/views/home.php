@@ -39,7 +39,6 @@
         </article>
       <?php endforeach; ?>
       </div>
-
     </div>
     
     <script src="/js/nav.js"></script>
