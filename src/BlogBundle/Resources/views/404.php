@@ -12,12 +12,12 @@
 
     <div class="wrapper">
 
-      <nav class="enabled">
+<!--       <nav class="enabled">
         <ul>
           <li><a href="/">Acceuil</a></li>
           <li><a href="/admin">Admin</a></li>
         </ul>
-      </nav>
+      </nav> -->
 
       <h1>Cette page n'existe pas !</h1>
       <h3><a href="/">Retourner à l'acceuil</h3>

@@ -24,6 +24,7 @@ CREATE TABLE IF NOT EXISTS `tp_php`.`User` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `nom` VARCHAR(45) NOT NULL,
   `prenom` VARCHAR(45) NOT NULL,
+  `pseudo` VARCHAR(45) NOT NULL,
   `mdp` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
@@ -41,7 +42,7 @@ CREATE TABLE IF NOT EXISTS `tp_php`.`Article` (
   `createdAt` DATE NOT NULL,
   `author_id` INT NOT NULL,
   PRIMARY KEY (`id`, `author_id`),
-  INDEX `fk_Article_User_idx` (`author_id` ASC) VISIBLE,
+  INDEX `fk_Article_User_idx` (`author_id` ASC),
   CONSTRAINT `fk_Article_User`
     FOREIGN KEY (`author_id`)
     REFERENCES `tp_php`.`User` (`id`)
@@ -53,3 +54,9 @@ ENGINE = InnoDB;
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+
+INSERT INTO User (id, nom, prenom, pseudo, mdp) VALUES
+('Bernard', 'Manon', 'Laxri', 'mdp'),
+
+INSERT INTO Article (title, author, category, content, createdAt, author_id) VALUES
+('Le jour des cendres', 'Zitanof Katia', 'Philosophie','Lorem ipsum dolor sit amet.', '2020-12-15', 1)

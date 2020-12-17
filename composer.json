@@ -2,6 +2,7 @@
   "name": "dwaps/tp-php",
   "description": "Exercice PHP: vers une architecture Symfony (préliminaire à l'étude de Symfony).",
   "require": {
-    "symfony/var-dumper": "^4.4"
+    "symfony/var-dumper": "^4.4",
+    "doctrine/annotations": "^1.11"
   }
 }

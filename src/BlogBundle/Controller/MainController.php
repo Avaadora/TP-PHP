@@ -9,7 +9,7 @@ class MainController {
     $articles = (new ArticleRepository())->findAll();
 
     $response = array(
-      "view" => $this->path_of_views."/acceuil.php",
+      "view" => $this->path_of_views."/home.php",
       "attributes" => [
         "articles" => $articles
       ]
@@ -32,5 +32,26 @@ class MainController {
       "attributes" => []
     );
     return $response;
+  }
+
+  public function connexionAction() {
+    $response = array(
+      "view" => $this->path_of_views."/edit.php",
+      "attributes" => []
+    );
+    return $response;
+  }
+
+  public function checkLogin() {
+
+    if ( (isset($_POST["pseudo"]) && "" != $_POST["pseudo"]) && (isset($_POST["password"]) && "" != $_POST["password"]) ) {
+      $pseudo = htmlspecialchars(trim($_POST["pseudo"]));
+      $password = htmlspecialchars(trim($_POST["password"]));
+      if ($pseudo == "Laxri" && $password == "mdp"){
+        $_SESSION['pseudo'] = $pseudo;
+        return true;
+      }
+    }
+    return false;
   }
 }

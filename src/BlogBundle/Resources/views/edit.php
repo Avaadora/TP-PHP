@@ -20,17 +20,17 @@
       </nav>
 
       <h1>Page d'administration</h1>
-
-      <form id="form-connexion" method="POST" action="/edit">
+      <form id="form-traitement">
         <fieldset>
-          <label for="pseudo">Pseudo :</label>
-          <input type="text" name="pseudo" autofocus value="">
+          <label for="edit">Editer un article</label>
+          <input type="text" name="edit">
+          <button>Editer</button>
         </fieldset>
         <fieldset>
-          <label for="password">Mot de passe :</label>
-          <input type="password" name="password">
+          <label for="delete">Supprimer un article</label>
+          <input type="text" name="delete">
         </fieldset>
-        <button type="submit">Go !</button>
+        <button>Supprimer</button>
       </form>
     
     </div>
